@@ -1,6 +1,6 @@
 ﻿namespace pryDiFiniActividadLogin
 {
-    partial class Form1
+    partial class FrmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,18 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
+            lblUsuario = new Label();
+            lblContraseña = new Label();
+            txtUsuario = new TextBox();
+            txtContraseña = new TextBox();
+            btnAceptar = new Button();
+            btnCancelar = new Button();
             SuspendLayout();
             // 
-            // Form1
+            // lblUsuario
+            // 
+            lblUsuario.AutoSize = true;
+            lblUsuario.Location = new Point(80, 76);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(47, 15);
+            lblUsuario.TabIndex = 0;
+            lblUsuario.Text = "Usuario";
+            // 
+            // lblContraseña
+            // 
+            lblContraseña.AutoSize = true;
+            lblContraseña.Location = new Point(80, 117);
+            lblContraseña.Name = "lblContraseña";
+            lblContraseña.Size = new Size(67, 15);
+            lblContraseña.TabIndex = 1;
+            lblContraseña.Text = "Contraseña";
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.Location = new Point(153, 73);
+            txtUsuario.MaxLength = 20;
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(100, 23);
+            txtUsuario.TabIndex = 2;
+            // 
+            // txtContraseña
+            // 
+            txtContraseña.Location = new Point(153, 114);
+            txtContraseña.MaxLength = 20;
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.PasswordChar = '*';
+            txtContraseña.Size = new Size(100, 23);
+            txtContraseña.TabIndex = 3;
+            // 
+            // btnAceptar
+            // 
+            btnAceptar.Location = new Point(303, 73);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new Size(75, 23);
+            btnAceptar.TabIndex = 4;
+            btnAceptar.Text = "Aceptar";
+            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(303, 113);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.TabIndex = 5;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(623, 249);
-            Name = "Form1";
-            Text = "Form1";
+            ControlBox = false;
+            Controls.Add(btnCancelar);
+            Controls.Add(btnAceptar);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtUsuario);
+            Controls.Add(lblContraseña);
+            Controls.Add(lblUsuario);
+            Name = "FrmLogin";
+            Text = "LOGIN";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblUsuario;
+        private Label lblContraseña;
+        private TextBox txtUsuario;
+        private TextBox txtContraseña;
+        private Button btnAceptar;
+        private Button btnCancelar;
     }
 }
