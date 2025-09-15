@@ -37,17 +37,18 @@
             label1.AutoSize = true;
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(105, 29);
+            label1.Location = new Point(120, 39);
             label1.Name = "label1";
-            label1.Size = new Size(346, 47);
+            label1.Size = new Size(435, 56);
             label1.TabIndex = 0;
             label1.Text = "Bienvenido al sistema";
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(233, 122);
+            btnAceptar.Location = new Point(266, 163);
+            btnAceptar.Margin = new Padding(3, 4, 3, 4);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(75, 23);
+            btnAceptar.Size = new Size(86, 31);
             btnAceptar.TabIndex = 1;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
@@ -55,11 +56,12 @@
             // 
             // frmInicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(575, 270);
+            ClientSize = new Size(657, 276);
             Controls.Add(btnAceptar);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmInicio";
             Text = "frmInicio";
             ResumeLayout(false);
